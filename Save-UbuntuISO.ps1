@@ -36,11 +36,11 @@
     Currently this script will not work on PowerShell linux as it needs BITS modules.
 #>
 Param(
-[ValidateSet("Server","Desktop")][string]$OSType = "server",
+[ValidateSet("Server","Desktop")][string]$OSType = "desktop",
 [ValidateSet("amd64","i386")][string]$OSbit = "amd64"
 )
 
-$isoStorageLocation = "C:\Temp"
+$isoStorageLocation = "C:\victory-win\Tools"
 Write-Host "Default is Download amd64 Server Operating System ISO." -ForegroundColor Cyan
 Write-Host "Run script if you want Desktop -OSType Desktop Parameter" -ForegroundColor Cyan
 Write-Host "Run script if you want 32bit ISP with -OSbit i386 Parameter" -ForegroundColor Cyan
